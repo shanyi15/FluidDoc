@@ -259,7 +259,7 @@ PaddePaddle通过编译时指定路径来实现引用各种BLAS/CUDA/cuDNN库。
 </p>
 
 您可以在 [Release History](https://pypi.org/project/paddlepaddle-gpu/#history) 中找到PaddlePaddle-gpu的各个发行版本。
-需要注意的是，在v1.3版本中，<code> paddlepaddle-gpu </code> 命令在windows环境下，会默认安装CUDA 8.0和cuDNN 5编译的PaddlePaddle
+需要注意的是，在v1.3版本中，<code> paddlepaddle-gpu </code> 命令在windows环境下，会默认安装CUDA 8.0和cuDNN 7编译的PaddlePaddle
 
 ***
 
@@ -361,27 +361,51 @@ PaddePaddle通过编译时指定路径来实现引用各种BLAS/CUDA/cuDNN库。
 		paddlepaddle_gpu-1.3.0-cp37-cp37m-linux_x86_64.whl</a></td>
 	</tr>
 	<tr>
-		<td> win_amd64 </td>
+		<td> win_cpu_noavx_openblas </td>
 		<td> - </td>
 		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-noavx-openblas/paddlepaddle-1.3.0-cp27-cp27m-win_amd64.whl">
 		paddlepaddle-1.3.0-cp27-cp27m-win_amd64.whl</a></td>
 		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-noavx-openblas/paddlepaddle-1.3.0-cp35-cp35m-win_amd64.whl">
-		 paddlepaddle-1.3.0-cp35-cp35m-win_amd64.whl</a></td>
+		paddlepaddle-1.3.0-cp35-cp35m-win_amd64.whl</a></td>
 		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-noavx-openblas/paddlepaddle-1.3.0-cp36-cp36m-win_amd64.whl">
 		paddlepaddle-1.3.0-cp36-cp36m-win_amd64.whl</a></td>
 		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-noavx-openblas/paddlepaddle-1.3.0-cp37-cp37m-win_amd64.whl">
 		paddlepaddle-1.3.0-cp37-cp37m-win_amd64.whl</a></td>
 	</tr>
 	<tr>
-		<td> cuda8.0_cudnn5_win_amd64 </td>
+		<td> win_cpu_noavx_mkl </td>
 		<td> - </td>
-		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-noavx-openblas/paddlepaddle_gpu-1.3.0-cp27-cp27m-win_amd64.whl">
+		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-noavx-mkl/paddlepaddle-1.3.0-cp27-cp27m-win_amd64.whl">
+		paddlepaddle-1.3.0-cp27-cp27m-win_amd64.whl</a></td>
+		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-noavx-mkl/paddlepaddle-1.3.0-cp35-cp35m-win_amd64.whl">
+		paddlepaddle-1.3.0-cp35-cp35m-win_amd64.whl</a></td>
+		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-noavx-mkl/paddlepaddle-1.3.0-cp36-cp36m-win_amd64.whl">
+		paddlepaddle-1.3.0-cp36-cp36m-win_amd64.whl</a></td>
+		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-noavx-mkl/paddlepaddle-1.3.0-cp37-cp37m-win_amd64.whl">
+		paddlepaddle-1.3.0-cp37-cp37m-win_amd64.whl</a></td>
+	</tr>
+	<tr>
+		<td> win_cpu_avx_openblas </td>
+		<td> - </td>
+		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-avx-openblas/paddlepaddle-1.3.0-cp27-cp27m-win_amd64.whl">
+		paddlepaddle-1.3.0-cp27-cp27m-win_amd64.whl</a></td>
+		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-avx-openblas/paddlepaddle-1.3.0-cp35-cp35m-win_amd64.whl">
+		paddlepaddle-1.3.0-cp35-cp35m-win_amd64.whl</a></td>
+		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-avx-openblas/paddlepaddle-1.3.0-cp36-cp36m-win_amd64.whl">
+		paddlepaddle-1.3.0-cp36-cp36m-win_amd64.whl</a></td>
+		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-avx-openblas/paddlepaddle-1.3.0-cp37-cp37m-win_amd64.whl">
+		paddlepaddle-1.3.0-cp37-cp37m-win_amd64.whl</a></td>
+	</tr>
+	<tr>
+		<td> win_cuda8.0_cudnn7_cpu_avx_openblas </td>
+		<td> - </td>
+		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-avx-openblas/paddlepaddle_gpu-1.3.0-cp27-cp27m-win_amd64.whl">
 		paddlepaddle_gpu-1.3.0-cp27-cp27m-win_amd64.whl</a></td>
-		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-noavx-openblas/paddlepaddle_gpu-1.3.0-cp35-cp35m-win_amd64.whl">
+		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-avx-openblas/paddlepaddle_gpu-1.3.0-cp35-cp35m-win_amd64.whl">
 		paddlepaddle_gpu-1.3.0-cp35-cp35m-win_amd64.whl</a></td>
-		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-noavx-openblas/paddlepaddle_gpu-1.3.0-cp36-cp36m-win_amd64.whl">
+		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-avx-openblas/paddlepaddle_gpu-1.3.0-cp36-cp36m-win_amd64.whl">
 		paddlepaddle_gpu-1.3.0-cp36-cp36m-win_amd64.whl</a></td>
-		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-noavx-openblas/paddlepaddle_gpu-1.3.0-cp37-cp37m-win_amd64.whl">
+		<td> <a href="https://paddle-wheel.bj.bcebos.com/1.3.0-win-avx-openblas/paddlepaddle_gpu-1.3.0-cp36-cp36m-win_amd64.whl">
 		paddlepaddle_gpu-1.3.0-cp37-cp37m-win_amd64.whl</a></td>
 	</tr>
    </tbody>
